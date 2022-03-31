@@ -1,0 +1,4 @@
+name = "CovarianceMatrix"
+uuid = "f948c634-3ea4-4a80-9e68-a2e7b8f51a21"
+authors = ["Patrick Armstrong <u6096820@anu.edu.au>"]
+version = "0.1.0"
