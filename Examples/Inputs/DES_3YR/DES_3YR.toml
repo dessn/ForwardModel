@@ -1,10 +1,8 @@
-[[ Filter ]]
-path = "Filters"
+[ global ]
+output_path = "../../Outputs/DES_3YR"
 
-[[ Filter.DES ]]
+[ survey ]
+path = "Surveys"
 
-[[ submit_batch ]]
-base_input = "all_systematics.input"
-
-[[ submit ]]
-base_input = "all_systematics_jacobian.input"
+[ output ]
+name = "DES_3YR.fits"

@@ -1,0 +1,21 @@
+Main.CovarianceMatrix | [Info] Logging to /home/patricka/.julia/dev/CovarianceMatrix/Examples/Outputs/DES_3YR/log.txt
+Main.CovarianceMatrix | [Debug] Base path: /home/patricka/.julia/dev/CovarianceMatrix/Examples/Inputs/DES_3YR
+Main.CovarianceMatrix | [Debug] Output path: /home/patricka/.julia/dev/CovarianceMatrix/Examples/Outputs/DES_3YR
+Main.CovarianceMatrix | [Info] Found CSP
+Main.CovarianceMatrix | [Info] Found CfA1
+Main.CovarianceMatrix | [Info] Found CfA2
+Main.CovarianceMatrix | [Info] Found CfA3K
+Main.CovarianceMatrix | [Info] Found CfA3S
+Main.CovarianceMatrix | [Info] Found CfA4_1
+Main.CovarianceMatrix | [Info] Found CfA4_2
+Main.CovarianceMatrix | [Info] Found DES
+Main.CovarianceMatrix | [Info] Found Hist
+Main.CovarianceMatrix | [Info] Found SDSS
+Main.CovarianceMatrix | [Info] Found SNLS
+Main.CovarianceMatrix | [Info] Found 11 surveys
+Main.CovarianceMatrix | [Debug] Surveys: ["CSP", "CfA1", "CfA2", "CfA3K", "CfA3S", "CfA4_1", "CfA4_2", "DES", "Hist", "SDSS", "SNLS"]
+Main.CovarianceMatrix | [Info] Found 54 total filters
+Main.CovarianceMatrix | [Debug] Filters: ["CSP_B", "CSP_G", "CSP_I", "CSP_R", "CSP_U", "CSP_V", "CSP_V1", "CSP_V2", "CfA1_B", "CfA1_I", "CfA1_R", "CfA1_U", "CfA1_V", "CfA2_B", "CfA2_I", "CfA2_R", "CfA2_U", "CfA2_V", "CfA3K_B", "CfA3K_I", "CfA3K_R", "CfA3K_U", "CfA3K_V", "CfA3S_B", "CfA3S_I", "CfA3S_R", "CfA3S_U", "CfA3S_V", "CfA4_1_B", "CfA4_1_I", "CfA4_1_R", "CfA4_1_V", "CfA4_2_B", "CfA4_2_I", "CfA4_2_R", "CfA4_2_V", "DES_G", "DES_I", "DES_R", "DES_Z", "Hist_B", "Hist_I", "Hist_R", "Hist_U", "Hist_V", "SDSS_G", "SDSS_I", "SDSS_R", "SDSS_U", "SDSS_Z", "SNLS_G", "SNLS_I", "SNLS_R", "SNLS_Z"]
+Main.CovarianceMatrix | [Info] Generating a 108x108 covariance matrix
+Main.CovarianceMatrix | [Info] Calculating survey uncertainties
+Main.CovarianceMatrix | [Info] Saving covariance matrix to DES_3YR.fits
