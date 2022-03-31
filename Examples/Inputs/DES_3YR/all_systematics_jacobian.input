@@ -1,0 +1,32 @@
+# usage: submit_batch_jobs.sh train_T21_suite.input >& output.log &
+# then, after completion (optional): submit_batch_jobs.sh --purge
+# (will remove ALL non-essential output in current pwd - e.g the intermediate step training files).
+# add DOCANA
+
+CONFIG:
+  # Final argument should be no. trainopts + 1
+  BATCH_INFO:  sbatch  $SBATCH_TEMPLATES/SBATCH_Midway2.TEMPLATE 71
+
+  # Python script to handle training.
+  JOBNAME: $PRODUCTS/snpca/train_SALT2.py
+
+  # Base files, used as starting point for training.
+  PATH_INPUT_TRAIN: $SNTRAIN_ROOT/SALT2/base_training_files/00_jla_base
+
+  # point to base (unperturbed) calibration files: Instrument and MagSys (aka SALTPATH)
+  # this directory should contain a survey.yaml file
+  PATH_INPUT_CALIB: $SNTRAIN_ROOT/SALT2/SALT2-2021/data
+
+  # in SALT2.INFO file, write magshift or waveshift for all surveys
+  # in list
+  SURVEY_LIST_SAMEMAGSYS:  [CFA3, OTHER, CALAN_TOLOLO]
+  SURVEY_LIST_SAMEFILTER:  [CFA1, CFA2, CFA3, OTHER, CALAN_TOLOLO]
+
+  # define TRAINOPT variations in calibration
+  TRAINOPT:
+  - SHIFTLIST_FILE = REPLACE_SHIFTLIST_FILE
+
+  # where to save output
+  OUTDIR: /home/patricka/University/Astrophysics/PhD/jacobian/outputs/all_systematics
+
+#END_YAML

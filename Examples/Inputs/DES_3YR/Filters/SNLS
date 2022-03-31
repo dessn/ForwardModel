@@ -1,0 +1,7 @@
+# Taken from Scolnic et. al. 2015
+# DOI: https://doi.org/10.48550/arXiv.1508.05361
+Filter, σZP (mag),  σFilter (nm),   CW (nm)
+g,      0.002,      0.3,            475
+r,      0.002,      1.0,            640
+i,      0.002,      3.1,            776
+z,      0.002,      0.6,            925

@@ -55,4 +55,6 @@ using .CovarianceMatrix
 verbose = args["verbose"]
 toml = abspath(args["input"])
 
+create_covariance_matrix(toml, verbose)
+
 end

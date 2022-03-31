@@ -1,0 +1,10 @@
+[[ Filter ]]
+path = "Filters"
+
+[[ Filter.DES ]]
+
+[[ submit_batch ]]
+base_input = "all_systematics.input"
+
+[[ submit ]]
+base_input = "all_systematics_jacobian.input"
