@@ -13,7 +13,6 @@ done
 DIR="$( cd -P "$( dirname "$SOURCE" )" >/dev/null 2>&1 && pwd )"
 export JULIA_PROJECT=$DIR/.. # $DIR is the scripts directory, so we go up a level to get to the base project directory
 export JULIA_LOAD_PATH=@:@stdlib  # exclude default environment
-export JULIA_DEPOT_PATH=$JULIA_PROJECT/.julia
 exec env LD_LIBRARY_PATH="" $JULIA_CMD -e 'include(popfirst!(ARGS))' "$SOURCE" "$@"
 =#
 # First check whether we need to instantiate
