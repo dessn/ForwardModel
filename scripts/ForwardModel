@@ -47,8 +47,8 @@ args = get_args()
 # Assuming args worked, do eveything else
 using TOML
 
-include("../src/CovarianceMatrix.jl")
-using .CovarianceMatrix
+include("../src/ForwardModel.jl")
+using .ForwardModel
 
 # Run script
 verbose = args["verbose"]

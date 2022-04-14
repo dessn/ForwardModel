@@ -1,4 +1,4 @@
-module CovarianceMatrix
+module ForwardModel 
 
 # External Packages
 using TOML
@@ -101,24 +101,24 @@ function create_covariance_matrix(toml::Dict, verbose::Bool)
     # Save covariance matrix
     output = get(toml, "output", Dict("name" => "DES.fits"))
     save_file = joinpath(config["output_path"], output["name"])
-    @info "Saving covariance matrix to $(output["name"])"
+    info_file = splitext(save_file)[1] * ".INFO"
+    @info "Saving covariance matrix to $(save_file)"
+    @info "Info file written to $(info_file)"
     FITS(save_file, "w") do io
         write(io, cov)
     end
 
-    header = FITS(save_file, "r") do io
-        return read_header(io[1])
-    end
+    info = String[]
 
     for (i, filter) in enumerate(all_filters)
-        header["$(filter.name)"] = i-1 
+        push!(info, "$(filter.name) = $(i-1)")
     end
-    header["dZP"] = string([0, num_filters - 1])
-    header["dFilter"] = string([num_filters, 2 * num_filters])
-    FITS(save_file, "w") do io
-        write(io, cov; header=header)
+    push!(info, "dZP = $(string([0, num_filters - 1]))")
+    push!(info, "dFilter = $(string([num_filters, 2 * num_filters]))")
+    info = join(info, "\n")
+    open(info_file, "w") do io
+        write(io, info)
     end
-
 end
 
 function create_covariance_matrix(toml_path::AbstractString, verbose::Bool)

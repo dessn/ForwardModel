@@ -2,16 +2,17 @@ OLUtils | [Info] Logging to /home/patricka/.julia/dev/CovarianceMatrix/Examples/
 Main.CovarianceMatrix | [Info] Found CSP
 Main.CovarianceMatrix | [Info] Found CfA1
 Main.CovarianceMatrix | [Info] Found CfA2
-Main.CovarianceMatrix | [Info] Found CfA3K
-Main.CovarianceMatrix | [Info] Found CfA3S
+Main.CovarianceMatrix | [Info] Found CfA3_KEPLERCAM
+Main.CovarianceMatrix | [Info] Found CfA3_STANDARD
 Main.CovarianceMatrix | [Info] Found CfA4_1
 Main.CovarianceMatrix | [Info] Found CfA4_2
 Main.CovarianceMatrix | [Info] Found DES
-Main.CovarianceMatrix | [Info] Found Hist
+Main.CovarianceMatrix | [Info] Found HISTORICAL
 Main.CovarianceMatrix | [Info] Found SDSS
 Main.CovarianceMatrix | [Info] Found SNLS
 Main.CovarianceMatrix | [Info] Found 11 surveys
 Main.CovarianceMatrix | [Info] Found 54 total filters
 Main.CovarianceMatrix | [Info] Generating a 108x108 covariance matrix
 Main.CovarianceMatrix | [Info] Calculating survey uncertainties
-Main.CovarianceMatrix | [Info] Saving covariance matrix to DES_3YR.fits
+Main.CovarianceMatrix | [Info] Saving covariance matrix to /home/patricka/.julia/dev/CovarianceMatrix/Examples/Outputs/DES_3YR/DES_3YR.fits
+Main.CovarianceMatrix | [Info] Info file written to /home/patricka/.julia/dev/CovarianceMatrix/Examples/Outputs/DES_3YR/DES_3YR.INFO
